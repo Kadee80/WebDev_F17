@@ -12,7 +12,7 @@
 
 ####Section A
 
-*Monday, Wednesday 6:30PM – 8:20PM;  2 MetroTech Center Rm: 813*
+*Monday, Wednesday 6:30PM – 8:20PM;  2 MetroTech Center Room 813*
 
 
 *To contact professor: kaa328@nyu.edu*
@@ -33,15 +33,26 @@ This course will provide a basic understanding of the methods and techniques of 
 
 **Students will:**
 
-* develop conceptual thinking skills to generate ideas and content in order to solve problems or create opportunities.
+1 – Students will develop conceptual thinking skills to generate ideas and content in order to solve problems or create opportunities.
+	Students will develop a research and studio practice through inquiry and iteration.
 
-* develop technical skills to realize their ideas.
+2 – Students will develop technical skills to realize their ideas.
+Students will understand and utilize tools and technology, while adapting to constantly changing technological paradigms by learning how to learn.
+	Students will be able to integrate/interface different technologies within a technological ecosystem.
 
-* develop critical thinking skills that will allow them to analyze and position their work within cultural, historic, aesthetic, economic, and technological contexts.
+3 – Students will develop critical thinking skills that will allow them to analyze and position their work within cultural, historic, aesthetic, economic, and technological contexts.
 
-* gain knowledge of professional practices and organizations by developing their verbal, visual, and written communication for documentation and presentation, exhibition and promotion, networking, and career preparation.
+4 – Students will gain knowledge of professional practices and organizations by developing their verbal, visual, and written communication for documentation and presentation, exhibition and promotion, networking, and career preparation.
 
-* develop collaboration skills to actively and effectively work in a team or group.
+5 – Students will develop collaboration skills to actively and effectively work in a team or group.
+
+
+
+Learning Outcomes to be Assessed:
+2 – Students will develop technical skills to realize their ideas.
+Students will understand and utilize tools and technology, while adapting to constantly changing technological paradigms by learning how to learn.
+Students will be able to integrate/interface different technologies within a technological ecosystem.
+
 
 ### Course Objectives**
 
@@ -126,7 +137,21 @@ If you are student with a disability who is requesting accommodations, please co
 ## Notable Dates
 You can find the official academic calendar [here](https://www.nyu.edu/registrar/calendars/university-academic-calendar.html#1178)
 
-
+* Monday, September 18, 2017 	Last day of active waitlists
+* Monday, September 18, 2017 	Last day of initial registration on Albert for all students.
+* Monday, September 18, 2017 	Last day to drop/add on Albert for all students.
+* Monday, September 18, 2017 	Last day to drop fall 2017 classes and not receive a grade of "W".
+* Monday, October 9, 2017 	Fall Recess No classes scheduled
+* Monday, November 6, 2017 	Midterm Grades Deadline
+* Monday, November 6, 2017 	Last day to use the Term Withdrawal Form to submit a fall semester term withdrawal request or submit a request to withdraw from a course. Students should consult the academic calendar of their home school for specific deadlines pertaining to course withdrawal for the term.
+* Wednesday, November 22, 2017 -
+Sunday, November 26, 2017	Student Thanksgiving Recess
+No classes scheduled
+* Thursday, November 23, 2017 -
+Sunday, November 26, 2017	Thanksgiving Recess for University Offices
+No classes scheduled / University Holiday
+* Tuesday, December 12, 2017 	Legislative Day - Classes will meet according to a Monday schedule
+* Friday, December 15, 2017 	Last day of Fall 2017 classes
 
 
 
