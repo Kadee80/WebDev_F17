@@ -16,7 +16,7 @@
     ```
     Ctrl+Shift+H (or Cmd+Shift+H if you're on a Mac)
     ```
-    will automatically indent your code properly. (Dont worry, we will have HTML to Prettify soon enough!) For more info on this package [visit their documentation] (https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify).
+    will automatically indent your code properly. (Dont worry, we will have HTML to Prettify soon enough!) For more info on this package [visit their documentation](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify).
     * Open the command pallette again (See step above)
     * Search for 'Emmet' and hit enter to install. This will give you some handy code hinting and autocomplete!
     * Search for 'AutoFileName' and hit enter to install. This package will help with autocompleting file names.
@@ -39,9 +39,9 @@
   *Open Terminal on Mac, or the Command Line on Windows:
 
     [Command Line Cheat Sheet Windows](http://simplyadvanced.net/blog/cheat-sheet-for-windows-command-prompt/)
-    
+
     [Terminal Cheat Sheet Mac](https://github.com/0nn0/terminal-mac-cheatsheet)
-    
+
     I will be teaching on a MAC, for the terminal/command line equivaltents see this [handy article](http://skimfeed.com/blog/windows-command-prompt-ls-equivalent-dir/).
 
   * List the current files and folders in your current directory:
@@ -86,16 +86,16 @@
 
   Now clone your forked copy of the class repo to the directory we just created on our Desktop (You are welcome to do all of this to your Documents folder instead).
 
-  Go to the [Class Repository](https://github.com/Kadee80/WebDev_Spring17).  Click on the **Clone or Download** button in the upper right. Copy the SSH link that appears.
+  Go to the [Class Repository](https://github.com/Kadee80/WebDev_F17).  Click on the **Clone or Download** button in the upper right. Copy the SSH link that appears.
 
   Back in Terminal/Command Line. Type
   ```
-  git clone https://github.com/Kadee80/WebDev_Spring17.git
+  git clone https://github.com/Kadee80/WebDev_F17.git
   ```
 
   `git clone` is the git command, the `url` that follows is the link we copied so we could clone this repo.
 
-  Now you have a copy of our in class notes/examples on your local machine! To update this repo to my current version at any time, you can do so by navigating to this front_end_web_F16 folder in terminal and typing:
+  Now you have a copy of our in class notes/examples on your local machine! To update this repo to my current version at any time, you can do so by navigating to this `WebDev_F17` folder in terminal and typing:
   ```
   git pull
   ```
