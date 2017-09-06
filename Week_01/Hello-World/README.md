@@ -110,11 +110,25 @@ While in signed in to Github. Go to your account page and click the `Repositorie
   ```
   cd WebDevClassFiles
   ```
-  **IMPORTANT**- note that we are in the Class Files folder, not the folder we cloned with the in class examples! So if we type `ls` or `dir` we should see the front_end_web_F16 class folder.
+  **IMPORTANT**- note that we are in the Class Files folder, not the folder we cloned with the in class examples! So if we type `ls` or `dir` we should see the `WebDev_F17` class folder.
 
-  We are going to clone you HW directory into the `WebDevClassFiles` folder, NOT the class example folder. You will take notes, make edits and push your HW assignments to YOUR HW REPO *not* the class example master repo.
+  We are going to clone your HW directory into the another folder, NOT the class example folder. You will take notes, make edits and push your HW assignments to YOUR HW REPO *not* the class example master repo.
 
-  You have created a repo on GitHub for your HW. Navigate to it, grab to the clone url from the `Clone or Download` button. Make sure you are in your WebDevClassFiles folder, then type:
+  You should have already created a repo on GitHub for your HW. Navigate to it, grab to the clone url from the `Clone or Download` button. Make sure you are NOT in the `WebDev_F17` folder!
+
+  to print your current working directory:
+  ```
+  pwd
+  ```
+  That will list the path to the directory you are currently in. for example: `/Users/Katie/Documents/WebDev_F17`
+
+  To navigate 'up' and out of the directory... in this case OUT of `WebDev_F17` and into `Documents` we can type:
+  ```
+  cd ../
+  ```
+  each `../` will jump us 'up' a level in the path.
+
+  Now that we are back in `Documents` clone use the url you copied from the clone or download button inside your hw repository on GitHub:
   ```
   git clone [your clone url copy paste here]
   ```
@@ -144,7 +158,7 @@ Every week, you will be commiting files and folders to your HW repo, and pushing
   ```
   or if we want to add any and everything new or updated to git :
   ```
-  git add *
+  git add .
   ```
 
   Now we commit with a message:
