@@ -23,7 +23,7 @@
 
 
 * Wireframing Software – [Balsamiq](https://balsamiq.com/), Keynote, or Powerpoint
-* Design and Graphics – [Adobe Creative Cloud (Photoshop)](http://www.adobe.com/creativecloud/buy/students.html?promoid=65FN7X8B&mv=other. If you are interested I also recommend Sketch and Zeplin which are rapidly replacing the older Adobe Workflow. **NYU Tandon School of Engineering has a discount plan for Students.**
+* Design and Graphics – [Adobe Creative Cloud (Photoshop)](http://www.adobe.com/creativecloud/buy/students.html?promoid=65FN7X8B&mv=other). If you are interested I also recommend Sketch and Zeplin which are rapidly replacing the older Adobe Workflow. **NYU Tandon School of Engineering has a discount plan for Students.**
 
 ### Git, Github, Class Files
 * Git is a widely used version control software which we can access via the command line of our computers.
@@ -172,6 +172,8 @@ Every week, you will be commiting files and folders to your HW repo, and pushing
   ```
   git push origin master
   ```
+  
+  You should be prompted to enter your github user name/password at this point. Its super annoying to have to enter your user name and password each time you push changes to your repository. [Follow this tutorial](https://help.github.com/articles/caching-your-github-password-in-git/) to store your password for github.
 
   Take a look at your online repo. It should match your local computers if you used ` git add` `git commit` and `git push` correctly.
 
