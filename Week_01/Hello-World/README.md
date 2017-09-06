@@ -31,10 +31,14 @@
 * GitHub is a web-based Git repository hosting service. You can use it as a backup of your git repositories, or to collaborate as a team on a project. We will be using it to keep track of our in class, and homework files.
 
 [FOLLOW THIS TUTORIAL to install Git and Authenticate Github on your MAC](http://installrails.com/)
+*note: we only need the beginning of this tutorial. you do not have to install rails (unless you want to). make sure you complete the `configure git` section*
 
 [Download Git For Windows or Linux](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-  *note: we only need the beginning of this tutorial. you do not have to install rails (unless you want to). make sure you complete the `configure git` section*
+* [Set Up a GitHub Account](https://github.com/)
+
+* [Set up and authenicate git](https://help.github.com/articles/set-up-git/)
+
 
 * Now, that we are set up, lets clone the class file repository so you can always have access to the latest in class exercises with a simple pull request.
 
