@@ -1,4 +1,4 @@
-## [Syllabus Review](../README.md)
+## [Syllabus Review](../../README.md)
 
 ## Introductions, Attendance
 
