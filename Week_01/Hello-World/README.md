@@ -39,7 +39,9 @@
   *Open Terminal on Mac, or the Command Line on Windows:
 
     *[Command Line Cheat Sheet Windows](http://simplyadvanced.net/blog/cheat-sheet-for-windows-command-prompt/)
+    
     *[Terminal Cheat Sheet Mac](https://github.com/0nn0/terminal-mac-cheatsheet)
+    
     * I will be teaching on a MAC, for the terminal/command line equivaltents see this [handy article](http://skimfeed.com/blog/windows-command-prompt-ls-equivalent-dir/).
 
   * List the current files and folders in your current directory:
