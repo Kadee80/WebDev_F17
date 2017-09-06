@@ -4,6 +4,8 @@
 
 * [Email Me Your GitHub HW Repo Link](mailto:kaa328@nyu.edu)
 
+* Read through Week_02 class notes
+
 * Make sure you have all software set up for next class. We won’t be using photoshop for a few weeks but please inquire about the student discounts.
 
 * Make a new folder in your HW repo called Week_1. In that folder, save .txt or .md file with  your favorite cooking recipe. We will be using that to format some HTML next week. Use `git add` `git commit` and `git push` to upload these folders and files to Github, just like we did in class today.
