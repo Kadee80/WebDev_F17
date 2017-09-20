@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box Model 101</title>
+	<!-- internal style sheet, these styles only apply to elements on this page -->
+	<style type="text/css">
+
+		/*
+		* {
+			box-sizing: border-box;
+		}
+		*/
+		.thumbnail {
+			background-color: #006FFF;
+			/* hex color- think RRGGBB */
+			height: 200px;
+			width: 200px;
+		}
+
+		.border-thumb{
+			border-width: 2px;
+			border-style: solid;
+			border-color: red;
+			/* shorthand for border definition*/
+			border: 2px solid lightseagreen;
+			/* we can also override one or more borders at a time*/
+			border-bottom: 10px solid limegreen;
+		}
+
+		.padded {
+			/*if we assign 1 value to padding we get the same value applied to all 4 sides*/
+			padding: 20px;
+			/* just like border, we can define each border separately*/
+			padding-left: 10px;
+			padding-right: 5px;
+			padding-top: 20px;
+			padding-bottom: 30px;
+			/*or like this top and bottom the same, left and right the same*/
+			padding: 40px 10px ;
+			/* 4 values top right bottom left - think clock */
+			padding: 10px 20px 30px 40px;
+			text-align: justify;
+		}
+
+		.space-around {
+			margin: 20px;
+		}
+
+		.stack-row {
+			/* floating = stack as many as i can to the left or right as long as i have a defined width to work with */
+			float: left;
+		}
+
+		#special-div{
+			width: 400px;
+			height: 300px;
+			border: 1px solid #FF0000;
+			float: right;
+			padding: 10px 20px;
+			margin-top: 50px;
+			background-color: rgba(255,100,0, 0.5);
+		}
+	</style>
+</head>
+<body>
+	<!-- make a div with the class thumbnail, thumbnail is a nice semantic class name -->
+	<div class="thumbnail stack-row"></div>
+	<!-- we can reuse a class across our page or many elements -->
+	<!-- we can apply multiple classes to a single element -->
+	<div class="thumbnail border-thumb stack-row">
+	</div>
+	<div class="thumbnail padded stack-row">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id lectus in lacus sagittis rhoncus. Nam posuere odio id elit imperdiet, et porta metus bibendum. Nunc sit amet ullamcorper justo. Donec quis lobortis risus. Quisque eget luctus elit. Sed nisi lacus, ullamcorper posuere efficitur sed, pulvinar nec ante.
+	</div>
+	<div class="thumbnail padded space-around stack-row">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id lectus in lacus sagittis rhoncus. Nam posuere odio id elit imperdiet, et porta metus bibendum. Nunc sit amet ullamcorper justo. Donec quis lobortis risus. Quisque eget luctus elit. Sed nisi lacus, ullamcorper posuere efficitur sed, pulvinar nec ante.
+	</div>
+	<div id="special-div"></div>
+</body>
+</html>
+
+
+
+
