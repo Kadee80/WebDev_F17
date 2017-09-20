@@ -6,5 +6,5 @@ Once you have your server space set up, be sure to create a README.md file in ea
 
 If you are still unfamiliar with git, practice! [Here is a helpful tutorial](http://rogerdudler.github.io/git-guide/) that explains what git does and how to use it with github.
 
-##BONUS
+## BONUS
 Build upon your recipe website/page. Using the entry level CSS we covered this week, mark up your recipe page (you should have a pure html markup already from last weeks assignment!) to have a header, footer, menu and side column. Play around with fonts, colors, margins, padding, floats, and any other CSS properties we have covered so far. This will not be due until Week 5 due to our cancelled class.
