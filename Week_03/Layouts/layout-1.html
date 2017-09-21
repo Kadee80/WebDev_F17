@@ -3,11 +3,49 @@
 <head>
 	<title>Layout 1 header-footer-sidebar using pixels</title>
 	<style type="text/css">
+		/*grouped selectors, same styles, different tags*/
+		div, header, footer, main, article, section, aside {
+			background-color: rgba(0,0,100,0.2);
+			min-height: 100px;
+		}
+
+		div.wrapper {
+			width: 900px;
+			/* center a div within the browser using margin 0 auto*/
+			margin: 0 auto;
+		}
+
+		article {
+			width: 600px;
+			float: left;
+			/* add 10px margin all around will add 20px to our width and height*/
+			margin: 10px;
+			/*600px -10px -10px = 580px*/
+			width: 580px;
+			/* adding padding will also add to our width dimensions*/
+			padding: 10px;
+			width: 560px;
+		}
+
+		aside {
+			width: 300px;
+			min-height: 600px;
+			float: left;
+			margin: 10px;
+			width: 280px;
+
+		}
+
+		/* when we are done floating elements we need to clear immediately after*/
+		.clear {
+			clear: both;
+			height: 0;
+		}
 
 	</style>
 </head>
 <body>
-	<div>
+	<div class="wrapper">
 		<header>
 			a header element pretend im the main nav...
 		</header>
@@ -28,6 +66,9 @@
 			<aside>
 				<h2>Sidebar</h2>
 			</aside>
+			<!-- clear out so our wrapping div (in this case is the main tag wraps around)
+			we will discuss several clear fixes and alternatives next week! -->
+			<br class="clear">
 		</main>
 		<footer>
 			<h3>Some footer text. maybe social media links some day...</h3>
