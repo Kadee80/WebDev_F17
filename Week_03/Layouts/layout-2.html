@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Full width header and footer, 3 equal columns</title>
+    <!-- Enough with the style tag! Let's link to an external style sheet that we can reuse common styles across an entire site -->
+    <link rel="stylesheet" type="text/css" href="css/layout-2.css">
+</head>
+
+<body>
+    <!-- in this example, the header and footer are not included in the wrapper element -->
+    <header>
+        A header element with width 100%. We will cover menu in other examples!
+    </header>
+    <main>
+        <h1>Main Content Article 1 - Pixel Based</h1>
+        <article class="col-pixels clearfix">
+            <h2>Article with 3 vertical sections.</h2>
+            <section>
+                <h3>Section 1</h3></section>
+            <section>
+                <h3>Section 2</h3></section>
+            <section>
+                <h3>Section 3</h3></section>
+        </article>
+    </main>
+    <!-- Fluid Layout using % -->
+        <h1>Article 2 - Percent Based, no wrapper</h1>
+        <p>note that this article is outside our main element - which has a set pixel width</p>
+        <article class="col-fluid clearfix">
+            <h2>Article with 4 fluid width vertical sections.</h2>
+            <section>
+                <h3>Section 1</h3></section>
+            <section>
+                <h3>Section 2</h3></section>
+            <section>
+                <h3>Section 3</h3></section>
+            <section>
+                <h3>Section 4</h3></section>
+        </article>
+        <!-- resize your browser to see the difference between the 2 layouts -->
+    <footer>
+        <h3>Some footer text</h3></footer>
+</body>
+
+</html>
