@@ -9,11 +9,11 @@ Next week you will be presenting you midterm project proposals to your classmate
 * concepts|skills you need to still learn to complete the project
 
 ## Examples
-These examples are from previous students that properly documented thier midterms and final projects. 
+These examples are from previous students that properly documented thier midterms and final projects.
 
-[Example Midterm Proposal](http://sites.bxmc.poly.edu/~isabellaweaver/webdev/?p=9)
+[Example Midterm Proposal Blog Post w/ presentation links](http://sites.bxmc.poly.edu/~valeriapinto/WD/index.php/2017/02/22/hw-4/)
 
-[Example Midterm Documentation](https://samantascreations.com/2015/10/25/midterm-presentation/)
+[Example Midterm Documentation](http://sites.bxmc.poly.edu/~gretakovacs/WebDev/index.php/2017/03/21/midterm-presentation/)
 
 ### Here are a few useful resources to help with inspiration:
 
