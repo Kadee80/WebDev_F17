@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url(../img/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*If you want it to work in IE*/
+    filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
+
+/* NAVIGATION */
+
+header{
+    width: 80%;
+    padding: 0 10%;
+    height: 50px;
+    position: fixed;
+    margin-bottom: 10px;
+    z-index: 10;
+    background-color: black;
+    background-image: url('../img/tweed.png');
+}
+
+header h1{
+    display: inline-block;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+}
+
+nav{
+    float: right;
+    display: inline-block;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    background-color: rgba(40,40,40,0.1);
+    font-size: 0em;
+}
+
+nav li{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    width: 120px;
+    display: inline-block;
+}
+
+nav a{
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    transition: all 1s;
+}
+
+nav a.active{
+    background-color: white;
+    color: #444;
+}
+
+nav a:hover, nav a.active:hover{
+    background-color: rgba(10, 10, 10, 0.5);
+    color: white;
+}
+
+
+
+
+
+
+/*  MAIN GALLERY*/
+.container{
+    width:900px;
+    margin:0 auto;
+    padding-top: 50px;
+}
+
+.polaroid {
+    position: relative;
+    width: 240px;
+    display: inline-block;
+    margin:20px;
+}
+
+.polaroid img {
+    width:100%;
+    height:auto;
+    border: 10px solid #FEF9EF;
+    border-bottom: 45px solid #FEF9EF;
+    /*h-shadow v-shadow | blur spread color*/
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(10,10,10,0.5);
+    -moz-box-shadow: 3px 3px 3px 3px rgba(10,10,10,0.5);
+    box-shadow: 3px 3px 3px 3px rgba(10,10,10,0.5);
+}
+
+.polaroid p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 10px;
+    font: 400 18px 'Kaushan Script', cursive;
+    color: #888;
+}
+
+/* Tranforms */
+
+.rotate-left{
+    transform: rotate(-10deg);
+    z-index: 100;
+    transition: all 5s ease;
+}
+
+.rotate-left:hover{
+    transform: rotate(10deg);
+}
+
+.scale2x{
+    transform: scale(1);
+    transition: all 5s ease-in-out;
+}
+
+.scale2x:hover{
+    z-index: 101;
+    transform: scale(2);
+}
+
+.scaleX{
+    transform: scale(2,1)
+}
+
+.skewX{
+    transform: skewX(-20deg);
+}
+
+.skewY{
+    transform: skewY(-20deg);
+}
+
+.skewBoth{
+    transform: skew(10deg, 30deg);
+}
+
+.rotX{
+    transform: rotateX(120deg);
+}
+
+.rotY{
+    transform: rotateY(120deg);
+}
+
+.rotZ{
+    transform: rotateZ(120deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
