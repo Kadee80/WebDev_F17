@@ -10,30 +10,30 @@ Today you will be presenting your midterm proposals to your classmates. Please b
 
 #Presentation Schedule
 
-John
-Homer
-Abhiroop
-Ahmed
-Daniel
+- John
+- Homer
+- Abhiroop
+- Ahmed
+- Daniel
 
-Jessica
-Jimmy C
-Miranda
-Rachel
-Wentao
+- Jessica
+- Jimmy C
+- Miranda
+- Rachel
+- Wentao
 __________
 
-Jimmy L
-Jillian
-Raj
-Bertin
-Richlle
+- Jimmy L
+- Jillian
+- Raj
+- Bertin
+- Richlle
 
-Tiffany
-Joshua
-Jeremy
-AJ
-Kevin
+- Tiffany
+- Joshua
+- Jeremy
+- AJ
+- Kevin
 
 If you have not done so already, please be sure to email me your documentation/proposal link along with a link to your HW repo.
 
