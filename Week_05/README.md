@@ -8,7 +8,32 @@ Today you will be presenting your midterm proposals to your classmates. Please b
 
 ** All proposals are due the first class of Week 5. We will be using a simple javascript function to shuffle your names and choose presentation order at the beginning of class so be prepared! **
 
-#Presentation Schedule [TBD]
+#Presentation Schedule
+
+- John
+- Homer
+- Abhiroop
+- Ahmed
+- Daniel
+
+- Jessica
+- Jimmy C
+- Miranda
+- Rachel
+- Wentao
+__________
+
+- Jimmy L
+- Jillian
+- Raj
+- Bertin
+- Richlle
+
+- Tiffany
+- Joshua
+- Jeremy
+- AJ
+- Kevin
 
 If you have not done so already, please be sure to email me your documentation/proposal link along with a link to your HW repo.
 
