@@ -11,6 +11,120 @@ Copyright 2013, Josh Cope
    Page Styles
    ========================================================================== */
 
+   .view{
+   	cursor: default;
+   	overflow: hidden;
+   	text-align: center;
+   	position: relative;
+   	margin-bottom: 30px;
+   	box-shadow: 0 0 10px #ddd;
+   }
+
+   .view .mask {
+   	width: 100%;
+   	height: 100%;
+   	position: absolute;
+   	overflow: hidden;
+   	top: 0;
+   	left:0;
+   	background-color: rgba(0,0,0,0.5);
+   }
+
+   .view img {
+   	display: block;
+   	position: relative;
+   }
+
+   .view h2 {
+   	text-transform: uppercase;
+   	color: #FFF;
+   	font-size: 22px;
+   	padding: 10px;
+   	background-color: rgba(0, 0, 0, 0.8);
+   	margin: 20px 0 0 0;
+   	text-shadow: none;
+   	position: relative;
+   }
+
+   .view p {
+   	font-family: Georgia, serif;
+   	font-style: italic;
+   	font-size: 10px;
+   	color:#FFF;
+   	padding: 10px 20px 5px 20px;
+   	position: relative;
+   }
+
+   .view a.info {
+   	color:#FFF;
+   	background-color: #000;
+   	padding: 10px 20px;
+   	text-decoration: none;
+   	margin-top: 10px;
+   	text-transform: uppercase;
+   	border-radius: 10px;
+   	position: relative;
+   }
+
+   .view a.info:hover {
+   	background-color: #72c02c;
+   }
+
+
+   /*******************************
+		CSS3 Hover Styles
+   *******************************/
+
+   /* set up transitions for hover*/
+
+   .view img {
+   	 left: 10px;
+   	 margin-left: -10px;
+   	 transition: all 0.6s ease-in-out;
+   }
+
+   .view .mask {
+   	transition: all 0.5s linear;
+   	opacity: 0;
+   }
+
+   .view h2 {
+   	 color:#333;
+   	 background-color: transparent;
+   	 border-bottom: 1px solid silver;
+   	 transform: scale(0);
+   	 transition: all 0.5s linear;
+   	 opacity: 0;
+   }
+
+   .view p,
+   .view a.info {
+   	transform: scale(0);
+   	opacity: 0;
+   	transition: all 0.5s linear;
+   }
+
+   /* zoom and rotate the image on hover*/
+   .view:hover img {
+   	transform: scale(2) rotate(10deg);
+   	opacity: 0.3;
+   }
+
+   /* show mask div on hover*/
+
+   .view:hover .mask {
+   	opacity: 1;
+   }
+
+   /*scale from 0 to 2, and up the opacity from 0 to 1*/
+
+   .view:hover h2,
+   .view:hover p,
+   .view:hover a.info {
+   	transform: scale(1);
+   	opacity: 1;
+   }
+
 /* =============================================================================
    Media Queries
    ========================================================================== */
