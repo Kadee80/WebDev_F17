@@ -1,8 +1,8 @@
-#HW - Due Week 8 (Week of March 20)
+# HW - Due Week 8 
 
 Finish your midterm sites. You will be presenting Week 8. *We do not have class next week due to Spring Break.*
 
-##In order for your Midterm to accepted as complete you will need to provide the following:
+## In order for your Midterm to accepted as complete you will need to provide the following:
 
 1. In Class Presentation
 2. Midterm project code in Midterm/ folder on your GitHub repository
@@ -16,8 +16,6 @@ Your presentation will take 7 minutes including time for questions/comments. You
 * Any issues you encountered
 * What you learned in order to accomplish your project
 * Next steps –  if you had more time and more tools, what would you do next?
-
-I will be handing out comment sheets for each student to fill out for each presentation. Every student should fill out a suggestion, question, compliment to give to the presenter anonymously. In addition to this, you will all be assigned another student to make a verbal comment/suggestion to after they are done presenting. Part of working on a web development team is critiquing and conversing.
 
 ## Interesting Tutorials:
 [Angled Edged Divs With CSS3](https://www.viget.com/articles/angled-edges-with-css-masks-and-transforms)
