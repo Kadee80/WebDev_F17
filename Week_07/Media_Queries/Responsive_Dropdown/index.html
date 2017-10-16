@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Navbar w/ Dropdown</title>
+	<style type="text/css">
+		/* remove default margin and padding */
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		/* our generic clearfix cause we are using floats and we dont want the container div to collapse*/
+    	.clear-fix::after {
+    		display: block;
+    		clear: both;
+    		/* for older broswers*/
+    		height: 0;
+    		font-size: 0;
+    		content: '';
+    		/*extra backup*/
+    		visibility: hidden;
+    	}
+
+    	/* remove bullets*/
+
+    	nav ul {
+    		list-style-type: none;
+    		position: relative;
+    	}
+
+    	nav ul li {
+    		width: 200px;
+    		float: left;
+    	}
+
+    	nav ul li:hover {
+    		background-color: #aaa;
+    	}
+
+    	/* make the anchors display block for max clickability*/
+
+    	nav ul a {
+    		display: block;
+    		color: #222;
+    		text-decoration: none;
+    		line-height: 30px;
+    		padding: 15px;
+    		text-align: center;
+    	}
+
+    	/* Hide sublists by default*/
+    	nav ul ul {
+    		display: none;
+    		background-color: #ddd;
+    	}
+
+    	nav ul ul{
+    		width: 300px;
+    	}
+
+    	nav ul ul a {
+    		padding: 15px;
+    		text-align: left;
+    	}
+
+    	/* Selects all ul elements where its parent is an ul with a moused over list item*/
+    	nav ul li:hover ul {
+    		display: block;
+    		background-color: #ccc
+    	}
+
+    	nav ul li:hover > ul li:hover {
+    		background-color: #999;
+    		color: white;
+    	}
+
+    	@media only screen and (max-width: 767px) {
+    		nav ul li {
+    			width: 100%;
+    			display: block;
+    		}
+
+    		nav ul ul{
+    			width: 100%;
+    		}
+
+    		nav ul ul a {
+    			text-align: center;
+    			width: 100%;
+    			padding: 15px 0;
+    		}
+    	}
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<nav id="main-nav">
+		<ul class="clear-fix">
+			<li><a href="#">Home</a></li>
+			<li>
+				<a href="#">Dropdown Content</a>
+				<ul>
+					<li><a href="#">Goats</a></li>
+					<li><a href="#">Chickens</a></li>
+					<li><a href="#">Cats</a></li>
+					<li><a href="#">Dogs</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Link</a></li>
+		</ul>
+	</nav>
+</body>
+</html>
