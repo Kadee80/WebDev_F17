@@ -1,6 +1,6 @@
 # HW - Due Week 8 
 
-Finish your midterm sites. You will be presenting Week 8. *We do not have class next week due to Spring Break.*
+Finish your midterm sites. You will be presenting Week 8.
 
 ## In order for your Midterm to accepted as complete you will need to provide the following:
 
