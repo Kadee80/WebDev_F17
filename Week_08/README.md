@@ -1,7 +1,4 @@
-# HW: Keep Working on Midterms
-# Install adobe photoshop - we will be doing image optimization next week. At the very least be sure to have a 7 day trial. Use this to optimize your images for your midterm
-
-# MIDTERMS - Due Week 9 (Halloween Week!)
+# HW - MIDTERMS NEXT WEEK
 
 Finish your midterm sites. You will be presenting Week 8.
 
@@ -19,8 +16,3 @@ Your presentation will take 7 minutes including time for questions/comments. You
 * Any issues you encountered
 * What you learned in order to accomplish your project
 * Next steps –  if you had more time and more tools, what would you do next?
-
-## Interesting Tutorials:
-[Angled Edged Divs With CSS3](https://www.viget.com/articles/angled-edges-with-css-masks-and-transforms)
-
-[W3 Schools How To Tutorials](https://www.w3schools.com/howto/default.asp)
