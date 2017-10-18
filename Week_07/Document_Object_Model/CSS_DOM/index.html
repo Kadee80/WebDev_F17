@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS DOM Manipulation the BARE MINIMUM</title>
+	<style type="text/css">
+		.active {
+			background-color: cornflowerblue;
+			color: white;
+			font-size: 60px;
+		}
+	</style>
+
+	<script type="text/javascript">
+		function changeHeader() {
+			// grab our h1 element and place it in a variable
+			var element = document.getElementById("changeMe");
+			console.log(element.classList);
+
+			// check and see if the h1 which is now a var called element
+			// has the active class applied
+			if (element.classList.contains('active')) {
+				//if the element already has the class active in the classList array
+				//remove it.
+				element.classList.remove('active');
+				element.innerHTML = "I'm not active anymore";
+			} else {
+				// add the class active to the class list
+				element.classList.add('active');
+				element.innerHTML = 'I\'m now active';
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<h1 id="changeMe" onclick="changeHeader()">This is a header, click me to change my css class and innerHTML!</h1>
+</body>
+</html>
