@@ -1,4 +1,4 @@
-# HW - Due Week 8 
+# HW - Due Week 9 (Halloween Week!) 
 
 Finish your midterm sites. You will be presenting Week 8.
 
