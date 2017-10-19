@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Listeners</title>
+	<style type="text/css">
+		.active {
+			color: red;
+			font-size: 30px;
+		}
+	</style>
+
+
+</head>
+<body>
+	<p id="toggleMe">Just a p tag to toggle classes...</p>
+	<button id="alertBtn" onclick="alertMe()">Click to fire a function using event listeners</button>
+	<h1 id="domItem">DOM item to load...</h1>
+
+	<script type="text/javascript">
+		// this wont work if we load the script in the head of the doc
+		var element = document.getElementById('domItem');
+		console.log(element);
+
+		// dummy function to prove a point!
+		function alertMe() {
+			alert("just an annoying popup for demo");
+		}
+
+		// our first event listener. this one will only work because we put the script below our html (bottom of body tag)
+
+		document.getElementById("alertBtn").addEventListener('click', alertMe);
+		// ^ this is the same as v
+		// var alertBtn = document.getElementById("alertBtn");
+		// alertBtn.addEventListener('click', alertMe);
+
+		document.addEventListener("DOMContentLoaded", function(event) {
+			// everything that happens within the anonymous function
+			// will get executed when the page has loaded.
+			// this is a great place to call all of the scripts you want to
+			// exectute on load.
+			// console.log(event);
+			// add an event listener with an anonymous function as the callback
+			document.getElementById("toggleMe").addEventListener('click', function(e) {
+				console.log(e.target);
+				var element = e.target;
+				element.classList.toggle('active');
+			})
+		});
+	</script>
+</body>
+</html>
+
+
+
+
+
+
