@@ -1,6 +1,6 @@
 # HW - MIDTERMS NEXT WEEK
 
-Finish your midterm sites. You will be presenting Week 8.
+Finish your midterm sites. You will be presenting Week 9.
 
 ## In order for your Midterm to accepted as complete you will need to provide the following:
 
