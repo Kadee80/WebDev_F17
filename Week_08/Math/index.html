@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math and Stuff</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// INTEGER DATA TYPES (Whole Numbers//
+		var x = 15;
+		var y = 35;
+
+		console.log(x+y);
+		console.log(x-y);
+		console.log(x*y);
+		console.log(x/y);
+
+		// modular operator % returns the remainder after a divison operation
+		// this is helpful when we want to use odd or even numbers , or every nth number
+		console.log(y%x);
+
+		for (var i = 2; i < 10; i++) {
+			if (i%2 === 0) {
+				console.log(i);
+			} else {
+				alert(i);
+			}
+		}
+
+		console.log(x);
+		x++;
+		x =  x+1;
+		console.log(x);
+		x--
+		console.log(x);
+
+		console.log(y);
+		y+=5;
+		y = y+5;
+		console.log(y);
+		y-=5;
+		console.log(y);
+
+		// FLOATING POINT NUMBERS AND JAVASCRIPT MATH OBJECT //
+		var z = 2.25;
+		// Math.floor rounds DOWN to the nearest INT
+		var zf = Math.floor(z);
+		console.log(zf);
+		// Math.ceil rounds UP to the nearest INT
+		var zc = Math.ceil(z);
+		console.log(zc);
+
+		// Math.round rounds up or down based on the decimals
+		var w = 2.75;
+		console.log(Math.round(z));
+		console.log(Math.round(w));
+
+		Math.random() returns a random floating point number between 0 and 1
+		console.log(Math.random());
+
+		// WE can use Math.round combined with Math.random to get a 0 or 1 true false situation
+
+		var yn = Math.round(Math.random());
+		console.log(yn);
+
+		if (yn === 0) {
+			alert('Heads');
+		} else {
+			alert('Tails');
+		}
+
+		// what if we want a random number between 0 and X?
+		function randomNumber(n) {
+			var rn = Math.round(n*Math.random());
+			console.log(rn);
+		}
+		// after we define a function we have to call it in order for it to execute
+		// randomNumber(234);
+
+		function randNumRange(min, max){
+			var rn = Math.round(Math.random()*(max-min) + min);
+			return rn;
+		}
+
+		console.log(randNumRange(34,77));
+
+
+	</script>
+</body>
+</html>
+
+
+
+
+
+
