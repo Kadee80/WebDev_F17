@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON 101</title>
+    <script type="text/javascript">
+    var customer = {
+        firstName: 'Tony',
+        lastName: 'Pony',
+        pets: ['dog', 'cat', 'iguana']
+    }
+
+    // console.log(customer);
+    // access our customers first name using dot notation
+    // console.log(customer.firstName);
+    // how would we get the last name?
+    // console.log(customer.lastName);
+    // pass in a string as our 'index' in square brackets (this is neccessary when we have keys with - in them)
+    // console.log(customer['lastName']);
+    // what if we want tony's second pet?
+    // console.log(customer.pets[1])
+        // log out all of tony's pets
+    for (var i = 0; i < customer.pets.length; i++) {
+        // console.log(customer.pets[i]);
+    }
+
+    // we can also add a new key value pair to our object
+    customer.age = 45;
+    // console.log(customer);
+    // we can update an exisiting value by accessing its key and assigning a new value
+    customer.lastName = 'Bologna';
+    // console.log(customer);
+    // if we want to add to an array inside our object we have to use .push()
+    customer.pets.push('chicken');
+    // console.log(customer);
+
+    var myClass = {
+        me: {
+            firstName: "Tony",
+            lastName: "Pony",
+            pets: ["Dog", "Cat", "Iguana"]
+        },
+        others: [{
+            firstName: "Sally",
+            lastName: "Omally",
+            pets: ["ButterFly", "Bird"]
+        }, {
+            firstName: "Billy",
+            lastName: "Goat",
+            pets: ["Snake", "Fish"]
+        }, {
+            firstName: "Tara",
+            lastName: "Ohara",
+            pets: ["Gecko", "Lizard"]
+        }]
+    };
+
+    // 1- Tony’s third pet
+    console.log(myClass.me.pets[2])
+    // 2- Billy’s last name
+    console.log(myClass.others[1].lastName)
+    // 3- The size of the others array
+    console.log(myClass.others.length)
+    // 4- The first name of everyone in the others array (for loop and array.length is needed)
+    for (var i = 0; i < myClass.others.length; i++){
+      console.log(myClass.others[i].firstName);
+    }
+    // 5- Tara’s first pet
+    console.log(myClass.others[2].pets[0]);
+    // 6- Bonus add another student(object) to the others array
+    myClass.others.push({firstName: 'Luvneesh', lastName: 'Mugrai', pets: ['eagle']});
+    console.log(myClass);
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

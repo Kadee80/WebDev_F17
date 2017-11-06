@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML5 Geolocation</title>
+  <script type="text/javascript">
+    
+    // use event delegation to make sure the page has loaded
+    document.addEventListener('DOMContentLoaded', getLocation);
+
+    function getLocation () {
+      // conditional statement to check if we have access to geolocation in this browser
+      if (navigator.geolocation) {
+        // set position is the callback function that gets fired once a position is returned
+        navigator.geolocation.getCurrentPosition(setPosition);
+      } else {
+        alert('Geolocation is not supported by your browser');
+      }
+    }
+
+    // here position is passed in from getCurrentPosition, we can call this parameter whatever we like
+    function setPosition (position) {
+      console.log(position.coords.latitude);
+      console.log(position.coords.longitude);
+      // pass the values for lat and lon into thier own variables
+      var lat = position.coords.latitude;
+      var lon = position.coords.longitude;
+      // grab our location div and as a var and pass in a message with our location
+      var loc = document.getElementById('location');
+      loc.innerHTML = 'Latitude: ' + lat + '<br>Longitude: ' + lon;
+    }
+
+
+
+
+
+  </script>
+</head>
+<body>
+
+<div id="location">
+    <p>Searching for Position...</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple markers</title>
+    <style>
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+    
+    #map {
+        height: 100%;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script>
+    // declaring these variables globally so that we have access to them between functions without having to pass them back and forth
+    var map;
+    var lat;
+    var lon;
+    var myLatLng = {};
+
+    // get geolocation is now called based on the callback from our maps api request
+    function getLocation() {
+        // conditional statement to check if we have access to geolocation in this browser
+        if (navigator.geolocation) {
+            // set position is the callback function that gets fired once a position is returned
+            navigator.geolocation.getCurrentPosition(setPosition);
+        } else {
+            alert('Geolocation is not supported by your browser');
+        }
+    }
+
+    // here position is passed in from getCurrentPosition, we can call this parameter whatever we like
+    function setPosition(position) {
+        console.log(position.coords.latitude);
+        console.log(position.coords.longitude);
+        // pass the values for lat and lon into thier own variables
+        lat = position.coords.latitude;
+        lon = position.coords.longitude;
+
+        myLatLng.lat = lat;
+        myLatLng.lng = lon;
+
+        initMap();
+    }
+
+    function initMap() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Hello World!'
+        });
+    }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&callback=getLocation">
+    </script>
+</body>
+
+</html>
