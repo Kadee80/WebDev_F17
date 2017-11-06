@@ -31,14 +31,14 @@ You can add links with markdown as follows:
 - Jimmy L
 - Daniel
 - Bertin
-- Joshua
 - Wentao
 - Jimmy C
 - John
-
-- Raj
-- Richlle
 - AJ
+________________________
+- Joshua
+- Raj
+- Richelle
 - Tiffany
 - Rachel
 - Ahmed
