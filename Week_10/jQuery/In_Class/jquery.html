@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  </head>
+  <body>
+  	<div class="container">
+    	<h1>Hello, jQuery!</h1>
+    	<p id="mouseMe">This is a paragraph with mouse enter and mouse leave events attached in jQuery.</p>
+
+    	<button class="btn btn-default" id="dblClickMe">
+    		Double Click for Event!
+    	</button>
+    	<hr>
+    	<!-- hide show buttons -->
+    	<button class="btn btn-danger" id="hideMe">
+    		Hide
+    	</button>
+
+    	<button class="btn btn-success" id="showMe">
+    		Show
+    	</button>
+
+    	<button class="btn btn-warning" id="toggleMe">
+    		Toggle Hide Show
+    	</button>
+
+    	<div class="card">
+    		This is a div that will hide and show. we are going to use the selector
+    		<code>
+    			$('.well:first')
+    		</code>
+    		as our selector.
+    	</div>
+
+  	</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- own custom scripts load after we load jq-->
+    <script type="text/javascript">
+    	// on load event listener jq style..
+    	$(document).ready(function (){
+    		// multiple event listener with parameter object
+    		$('#mouseMe').on({
+    			mouseenter: function () {
+    				console.log('mouse entered the paragraph element!');
+    			},
+    			mouseleave: function () {
+    				console.log('mouse left the paragraph element ;(');
+    			}
+    		});
+
+    		$('#dblClickMe').dblclick(function () {
+    			alert('double click!');
+    		});
+
+    		// Hide Show Toggle
+    		$('#hideMe').click(function(){
+    			$('.card:first').hide();
+    		});
+
+    		$('#showMe').click(function(){
+    			$('.card:first').show();
+    		});
+
+    		$('#toggleMe').click(function(){
+    			$('.card:first').toggle();
+    		});
+
+    	});
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
