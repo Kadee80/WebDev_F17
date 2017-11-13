@@ -2,7 +2,7 @@
 
 ## Final Projects
 
-Next week you will be presenting your final project ideas. based on your proposal, I will let you know if the scope of the project is too big, too small, or just right and what needs to be added or focused on.
+Email me a link to your final project proposal by next Monday. You will not be presenting in class, but prepare a post or slideshow as if you were. Based on your proposal, I will let you know if the scope of the project is too big, too small, or just right and what needs to be added or focused on. 
 
 ## Final Project Options:
 
