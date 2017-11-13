@@ -6,7 +6,7 @@ Email me a link to your final project proposal by next Monday. You will not be p
 
 ## Final Project Options:
 
-### Continue with Midterm Ideas
+### Continue with Midterm Ideas | Rebuild with Bootstrap
 
 If you choose this option – you MUST add in enough new features for it to qualify as a secondary substantial project!
 
