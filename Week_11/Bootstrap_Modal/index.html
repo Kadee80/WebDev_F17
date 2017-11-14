@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Modals 2 Ways</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Modals 2 Ways</h1>
+
+    <div class="container" style="padding-top: 100px">
+    	<button
+    		type="button"
+    		class="btn btn-primary btn-lg"
+    		data-toggle="modal"
+    		data-target="#basicModal">
+    		Launch Demo Modal!
+    	</button>
+
+    	<pre style="padding-top:100px">
+Heaven stops the nose at it and the moon winks,
+The bawdy wind that kisses all it meets
+Is hush'd within the hollow mine of earth,
+And will not hear it. What committed!
+Impudent <a href="#" data-toggle="modal" data-target="#define">strumpet</a>!
+    	</pre>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- basic modal wrapper -->
+    <div
+    	class="modal fade"
+    	id="basicModal"
+    	tab-index="-1"
+    	role="dialog"
+    	aria-labeledby="myModalLabel">
+    	<!-- Modal positioning -->
+    	<div class="modal-dialog" role="document">
+    		<!-- modal content -->
+    		<div class="modal-content">
+    			<!-- Header with title and close icon -->
+    			<div class="modal-header">
+    				<h4 class="modal-title" id="myModalLabel">My First Modal</h4>
+    				<button
+    					type="button"
+    					class="close"
+    					data-dismiss="modal"
+    					aria-label="close"
+    					>X</button>
+    			</div>
+    			<!-- main content -->
+    			<div class="modal-body">
+    				<p>Some modal stuff and junk!</p>
+    			</div>
+    			<!-- modal footer -->
+    			<div class="modal-footer">
+    				<button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+    				<!-- maybe this guy saves to a database or calls a custom function -->
+    				<button class="btn btn-success">Save</button>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+
+    <!-- simple small modal - the bare minimum -->
+    <div class="modal fade" id="define" tabindex="-1" role="dialog">
+    	<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+	    		<div class="modal-header">
+	    			<h4 class="modal-title">Strumpet</h4>
+	    			<button
+	    					type="button"
+	    					class="close"
+	    					data-dismiss="modal"
+	    					aria-label="close"
+	    					>X</button>
+	    		</div>
+	    		<div class="modal-body">
+	    			<p>
+	    			<strong>noun</strong> <em>dated</em>
+	    			<br />
+	    				a female prostitute or a promiscuous woman.
+	    			</p>
+	    		</div>
+	    	</div>
+    	</div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
