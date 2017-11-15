@@ -103,24 +103,30 @@ Today we are going to continue with a simple timeline example. We got our HTML s
 
 </html>
 We are going to be using jQuery to assign elements to variables and take a look at a few new jQuery methods while we are at it. So lets link to the jquery code:
-
+```
 <script
   src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
   crossorigin="anonymous"></script>
+```
+
 We are going to use a new jQuery method today:
 
-.eq()
+`.eq()`
 
-In our HTML we have 2 <h1> tags, so if we use jQuery to select elements by tag name like so:
+In our HTML we have 2 `<h1>` tags, so if we use jQuery to select elements by tag name like so:
 
+```
 var $h1s = $("h1");
 console.log($h1s);
-Whats with the $ before the variable name? We do this to keep track of our jQuery variables. Not necessary but useful. When we console log out out $h1s variable we see we have an array. If we want to pull out an element in a set/array we can do this using .eq(); for example:
+```
+Whats with the $ before the variable name? We do this to keep track of our jQuery variables. Not necessary but useful. When we console log out out `$h1s` variable we see we have an array. If we want to pull out an element in a set/array we can do this using `.eq();` for example:
 
+```
 var $hello = $("h1").eq(0);
 console.log($hello.html());
-You’ll notice jQuery gives us another shortcut method. Rather than typing .innerHTML we can type .html() to get the contents of an element.
+```
+You’ll notice jQuery gives us another shortcut method. Rather than typing .innerHTML we can type `.html()` to get the contents of an element.
 
 Live Code:
 
