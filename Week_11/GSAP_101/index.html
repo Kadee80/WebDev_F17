@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GSAP 101</title>
+	<style type="text/css">
+		#sb {
+			position: absolute;
+			top: 500px;
+			left:0;
+		}
+	</style>
+</head>
+<body>
+
+	<img src="img/soccer-ball.png" id="sb"/>
+
+	<img src="img/basket-ball.png" class="bball"/>
+	<img src="img/basket-ball.png" class="bball"/>
+	<img src="img/basket-ball.png" class="bball"/>
+	<img src="img/basket-ball.png" class="bball"/>
+	<img src="img/basket-ball.png" class="bball"/>
+
+	<!-- Link to GreenSock Robust Version CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+	<!-- custom scripts after GSAP has loaded -->
+	<script type="text/javascript">
+		// we write all animation scripts here after gsap loads
+		//grab our soccerball by ID
+		var sb = document.getElementById('sb');
+		// using the TWEENMAX object TO animate over 3 seconds and change position with an ease
+		//TweenMax.to(sb, 3, {left: 800, top: 300});
+		TweenMax.to(sb, 3, {x: 800, y:-500, rotation:360, ease:Elastic.easeOut});
+
+		// grab the array of bballs with same class
+		TweenMax.staggerTo('.bball', 1, {y: 500, rotation: 720, delay: 1, ease:Bounce.easeOut}, 1);
+
+		TweenMax.to('#sb, .bball', 1, {opacity: 0, delay: 5, onComplete: imDone});
+
+		function imDone () {
+			alert("I'm Done!");
+		}
+
+
+
+
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+

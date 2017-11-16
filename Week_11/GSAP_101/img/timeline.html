@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timline in GSAP</title>
+	<style>
+		body {
+			text-align: center;
+			margin:0;
+		}
+
+		.progress {
+			position: relative;
+			z-index: 3;
+			width: 100%;
+			height: 30px;
+			background-color: black;
+		}
+
+		h2, p {
+			text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="progress"></div>
+	<div id="page-wrap">
+		<h2>Hello Green Sock</h2>
+		<h2>You're Awesome</h2>
+		<p>I just made my first timeline and thats pretty cool!</p>
+	</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		// grab first h2 in our page  (we have 2 so we will get an array back)
+		var
+		$hello = $('h2').eq(0),
+		$awesome = $('h2').eq(1),
+		$text = $('p'),
+		$progress = $('.progress'),
+		$bg = $('#page-wrap');
+
+		var tl = new TimelineLite();
+
+		tl.from($bg, 0.8, {opacity:0})
+		.from($hello, 0.5, {left: -500, opacity:0})
+		.from($awesome, 0.5, {left: -500, opacity:0})
+		.from($text, 0.8, {top: 50, opacity:0}, "+=1.0")
+		.from($progress, tl.duration(), {scaleX:0, transformOrigin:'left'}, 0)
+
+
+	});
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
