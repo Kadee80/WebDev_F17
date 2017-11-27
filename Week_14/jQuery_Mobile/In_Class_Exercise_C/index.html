@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link to Latest Default jQuery Mobile CSS Theme -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <!-- Link to Latest Stable jQuery that works with jQ mobile -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- Link to Latest Stable jQuery Mobile -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style type="text/css">
+    .padded {
+        padding: 2%;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Pages Dialogs and Navs Go Here -->
+    <div data-role="page">
+
+        <!-- NavPanel -->
+        <div data-role="panel" id="navpanel" data-theme="b" data-display="overlay" data-position="right">
+            <ul data-role="listview" data-corners="false">
+                <li><a href="#" data-role="button" data-rel="close" data-icon="delete" data-iconpos="right">Close</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="page2.html">Page 2</a></li>
+            </ul>
+        </div>
+
+        <!-- Star Popup -->
+        <div data-role="popup" id="star" data-overlay-theme="b" data-theme="b" data-dismissible="true">
+            <div data-role="header">
+              <h2>Goat Fact #2</h2>
+              <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            </div>
+            <div data-role="main">
+                <p> Goats were one of the first animals to be tamed by humans and were being herded 9,000</p>
+            </div>
+            <div data-role="footer">
+              <div class="ui-grid-b">
+                <div class="ui-block-a">
+                  <a data-role="button" data-icon="check" data-iconpos="left" data-theme="b"
+                  data-rel="back">YES</a>
+                </div>
+                <div class="ui-block-b">
+                    <a data-role="button" data-icon="delete" data-iconpos="left" data-theme="b"
+                  data-rel="back">NO</a>
+                </div>
+                <div class="ui-block-c">
+                  <a data-role="button" data-icon="info" data-iconpos="left" data-theme="b"
+                  data-rel="back">MAYBE</a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+        <!-- Header with Hamburger Menu -->
+        <div data-role="header" data-theme="b">
+            <h1>Awesome App</h1>
+            <a href="#navpanel" data-role="button" data-icon="bars" data-iconpos="notext" class="ui-btn-right">MENU</a>
+        </div>
+
+
+        <div data-role="main" class="padded">
+            <p>Hello main content</p>
+            <input type="text" placeholder="username">
+            <button data-role="button">Click Me</button>
+        </div>
+
+
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#star" data-rel="popup" data-position-to="window" data-transition="flow" data-icon="star">Star</a></li>
+                    <li><a href="#" data-icon="heart">Heart</a></li>
+                    <li><a href="#" data-icon="home">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END PAGE -->
+</body>
+
+</html>
