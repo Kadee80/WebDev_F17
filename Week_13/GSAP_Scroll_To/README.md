@@ -1,16 +1,6 @@
 # Scrollto Plugin – Elevator animation/nav example:
 
-This example will be using a lot of jQuery, GSAP’s TweenLite, EasePack, and ScrollTo plugins. Here are the CDN links for the libraries we need for this example before we begin:
-
-
-`<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>`
-
-` <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>`
-
-`<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ScrollToPlugin.min.js"></script>`
-
-`<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>`
-
+This example will be using a lot of jQuery, GSAP’s TweenLite, EasePack, and ScrollTo plugins.
 
 We should wrap all of our code in a document.ready function to ensure nothing executes before everything has loaded on our page:
 
