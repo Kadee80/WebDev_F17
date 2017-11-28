@@ -1,5 +1,9 @@
 # HW: Complete your final projects!
 
+## Final Project Presentations Will Take Place TUESDAY DEC 12 & WEDNESDAY DEC 13
+
+## MONDAY DEC 11 class will be opened up as [last minute office hour slots](https://calendar.google.com/calendar/selfsched?sstoken=UUNXcDRjZFIwTXZDfGRlZmF1bHR8NDkzNWVkOWUxNGI3M2FkZTJlYTY0YjU0ZmRiNjJiYTE). 
+
 In order for your project to be considered complete for grading you will be **required to submit the following by 8pm Monday Dec 18**
 
 1. In Class Presentation
@@ -27,35 +31,6 @@ Be sure to have a visible folder labeled midterm in your repository with your so
 You can add links with markdown as follows:
 
 `[The Link Title A User Sees](http://theURLtoLINKto.com)`
-
-# Finals
-In order for your project to be considered complete for grading you will be **required to submit the following by 8pm Tuesday May 16th.**
-
-1. In Class Presentation
-2. Blog or README.md documentation (email me link before Tuesday 8pm)
-3. Live Hosted Site (email me link before Tuesday 8pm)
-4. Source code in a folder labeled FINAL in your GitHub repository
-
-## Presentations
-
-This week you will be presenting your final website projects. Your presentation should cover:
-
-## Documentation
-
-- Blog documentation of your process
-- Explanation of some of your source code (not the entire site but sometime you found challenging or interesting you’d like to share)
-- Any issues you encountered
-- What you learned in order to accomplish your project
-- Next steps – if you had more time and more tools, what would you do next?
-- Your design and presentation is long part of your grade. I will be looking through your source code on github later this week.
-
-## Source Code on Github and Link to Hosted Site (live on server)
-
-Be sure to have a visible folder labeled midterm in your repository with your source code by THIS COMING FRIDAY. Within your midterm folder, add a README.md file containing a link to the live hosted site, and a second link to your documentation.
-
-You can add links with markdown as follows:
-
-[The Link Title A User Sees](http://theURLtoLINKto.com)
 
 
 # A Quick Reminder About Grading Policy
