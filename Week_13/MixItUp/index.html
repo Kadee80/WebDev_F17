@@ -1,166 +1,226 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Mix It Up and JQ</title>
-	<style type="text/css">
-		/* Global Styles*/
-		* {
-			box-sizing: border-box;
-		}
+    <title>Mix It Up</title>
+    <style type="text/css">
+        /* Global Style */
 
-		body,
-		button {
-			font-family: 'Helvetica Neue', arial, sans-serif;
-		}
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 
-		/*Mix Styles*/
+    body,
+    button {
+        font-family: 'Helvetic Neue', arial, sans-serif;
+    }
+    /* Mix Styles */
 
-		.container {
-			position: relative;
-			padding: 2%;
-			/*evenly space inline block elements*/
-			text-align: justify;
-			background-color: #ddd;
-			min-height: 200px;
-		}
+    .container {
+        position: relative;
+        padding: 2% 2% 0;
+        /* evenly space inline block elements */
+        text-align: justify;
+        /* zero out the font size so we dont get the extra 4px right margin we get from inline block elements when we do this we need to make sure re respecify font sizes for text within */
+        /* font-size: 0.1px; */
+        background: #DDD;
+        min-height: 200px;
+    }
+    /* This is needed for spacing between mix elements */
 
-		.container::after {
-			content: '';
-			display: inline-block;
-			width: 100%;
-		}
+    .container:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+    /* Mobile First Style Method. Default styles apply to mobile devices and are overridden by media queries for larger devices */
 
-		/*mobile first design pattern. default styles apply to mobile phones and we use media queries to target larger screens*/
+    .container .mix,
+    .container .gap {
+        display: inline-block;
+        width: 100%;
+    }
 
-		.container .mix,
-		.continer .gap {
-			display: inline-block;
-			width: 100%;
-		}
+    .container .mix {
+        text-align: left;
+        background-color: #AAA;
+        margin-bottom: 2%;
+        border-radius: 8px;
+        display: none;
+        height: 200px;
 
-		.container .mix {
-			text-align: left;
-			background-color: #aaa;
-			margin-bottom: 2%;
-			border-radius: 8px;
-			/*display: none;*/
-			height: 200px;
-		}
+    }
 
-		.container .mix::after {
-			content: attr(class);
-			color: white;
-			font-size: 16px;
-			display: inline-block;
-			vertical-align: top;
-			padding: 4% 6%;
-			font-weight: 300;
-		}
+    .container .mix p{
+        font-size: 16px;
+    }
 
-		/*this is optional we are adding some extra padding so that our boxes are a fixed height larger than our content, we could also use min height here*/
-		.container.mix::before {
-			content: '';
-			display: inline-block;
-			padding-top: 60%;
-		}
-
-		/* larger phones and tablet size*/
-		@media all and (min-width:768px) {
-			.container .mix,
-			.container .gap {
-				width: 48%;
-			}
-		}
-
-		/* desktop and larger screens*/
-		@media all and (min-width:1024px) {
-			.container .mix,
-			.container .gap {
-				width: 24%;
-			}
-		}
-
-		/*Control Styles*/
-		.controls {
-			background-color: #111;
-			padding: 1%;
-			color:  white;
-		}
-
-		label {
-			font-weight: 400;
-			margin:0 20px 0 0;
-		}
-
-		button {
-			display: inline-block;
-			padding: 5px 10px;
-			background-color: #777;
-			border: 0;
-			color: #eee;
-			font-size: 16px;
-			font-weight: 100;
-			border-radius: 4px;
-			cursor: pointer;
-		}
-
-		button.active {
-			background-color: #999;
-		}
-
-		button:focus {
-			outline: 0 none;
-		}
-
-		button + label {
-			margin-left: 1rem;
-		}
-
-
-
-
-	</style>
+.container .mix:after {
+        /* in our content property we can echo out attributes  */
+         content: attr(class);
+                 color: white;
+        font-size: 16px;
+        display: inline-block;
+        vertical-align: top;
+        padding: 4% 6%;
+        font-weight: 300;
+    }
+        /* This is optional but we are adding some extra padding so that our boxes are a hixed hieght larger than our content, we can also use min-height */
+.container .mix:before {
+        content: '';
+        display: inline-block;
+        padding-top: 60%;
+    }
+        /* larger phones and tablet size */
+        @media all and (min-width: 768px) {
+            .container .mix, .container .gap {
+                width: 48%;
+            }
+        }
+        /* Desktop and larger screens */
+        @media all and (min-width: 1024px) {
+            .container .mix,
+            .container .gap {
+                width: 24%;
+            }
+        }
+        /* Control Styles*/
+        .controls {
+            background-color: #111;
+            padding: 1%;
+            color: white;
+        }
+        label {
+            font-weight: 400;
+            margin: 0 20px 0 0;
+        }
+        button {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #666;
+            border: 0;
+            color: #EEE;
+            font-size: 16px;
+            font-weight: 100;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button.active {
+            background: #999;
+        }
+        button:focus {
+            outline: 0 none;
+        }
+        button + label {
+            margin-left: 1em;
+        }
+        /* Fail Message */
+        .container .fail-message {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2%;
+            text-align: center;
+            opacity: 0;
+            pointer-events: none;
+        }
+        .container .fail-message:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+        .container.fail .fail-message {
+            content: '';
+            opacity: 1;
+            pointer-events: all;
+        }
+        .container .fail-message span {
+            display: inline-block;
+            font-weight: 500;
+            color: #333;
+            font-size: 20px;
+            vertical-align: middle;
+        }
+    </style>
 </head>
+
 <body>
-<!-- our sorting controls and filter -->
+    <!-- Sort and Filter Controls -->
+    <div class="controls">
+        <label>Filter: </label>
+        <button class="filter" data-filter=".dog">Dog</button>
+        <button class="filter" data-filter=".cat">Cat</button>
+        <button class="filter" data-filter=".goat">Goat</button>
+        <button id="reset">Reset</button>
+        <!-- sort buttons -->
+        <label>Sort: </label>
+        <button class="sort" data-sort="default">Default</button>
+        <button class="sort" data-sort="myorder:asc">Ascending</button>
+        <button class="sort" data-sort="myorder:desc">Descending</button>
+        <button class="sort" data-sort="random">Random</button>
+    </div>
+    <!-- The container and content to sort -->
+    <div class="container" id="Container">
+        <!-- Fail Message Div Here -->
+        <div class="fail-message"><span>No Items were found matching the current filters</span></div>
+        <!-- sort me -->
+        <div class="mix dog" data-myorder="2">
+        </div>
+        <div class="mix cat" data-myorder="1"></div>
+        <div class="mix goat" data-myorder="3"></div>
+        <div class="mix dog cat" data-myorder="5"></div>
+        <div class="mix goat cat" data-myorder="6"></div>
+        <div class="mix goat dog" data-myorder="4"></div>
+        <!-- invisible divs that help with the spacing when sorted -->
+        <div class="gap"></div>
+        <div class="gap"></div>
+    </div>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
+    // $(document).ready(function(){});
 
-<div class="controls">
-	<label>Filter:</label>
-	<button class="filter">Dog</button>
-	<button class="filter">Cat</button>
-	<button class="filter">Goat</button>
-	<label>Sort:</label>
-</div>
+    $('#reset').click(function() {
+        $('#Container').mixItUp('filter', '');
+    });
+
+    $(function() {
+
+        $('#Container').mixItUp({
+            load: {
+                filter: 'all'
+            },
+            controls: {
+                toggleFilterButtons: true, //allowing more than one filter button to be selected at the same time, try changing to false
+                toggleLogic: 'and' // this means when mutiple buttons are selected for filtering we only show the items which have all filters true, try changing to or
+            },
+            animation: {
+                enable: true,
+                effects: 'fade scale rotateX stagger',
+                duration: 1000,
+                easing: 'ease',
+                perspectiveDistance: '3000',
+                perspectiveOrigin: '50% 50%',
+                queue: true,
+                queueLimit: 1,
+                animateChangeLayout: false,
+                animateResizeContainer: false,
+                animateResizeTargets: false,
+                staggerSequence: false,
+                reverseOut: false
+            }
 
 
+        });
 
 
-<!-- container and ID to sort -->
-<div class="container" id="Container">
-	<!-- sort me! -->
-	<!-- class mix is used by mixitup to know what to sort/mix -->
-	<!-- other classes are used for sorting -->
-	<div class="mix dog"></div>
-	<div class="mix cat"></div>
-	<div class="mix dog cat"></div>
-	<div class="mix goat"></div>
-	<div class="mix goat cat"></div>
-	<div class="mix goat dog"></div>
-
-</div>
-
-
-
-<!-- Load JQ first -->
-<script
-  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-  crossorigin="anonymous"></script>
-<!-- Then mixitup JQ lib -->
-<script src="jquery.mixitup.min.js" />
-<!-- Custom Scripts -->
-<script type="text/javascript">
-
-</script>
+    });
+    </script>
 </body>
+
 </html>
