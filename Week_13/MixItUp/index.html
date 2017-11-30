@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mix It Up and JQ</title>
+	<style type="text/css">
+		/* Global Styles*/
+		* {
+			box-sizing: border-box;
+		}
+
+		body,
+		button {
+			font-family: 'Helvetica Neue', arial, sans-serif;
+		}
+
+		/*Mix Styles*/
+
+		.container {
+			position: relative;
+			padding: 2%;
+			/*evenly space inline block elements*/
+			text-align: justify;
+			background-color: #ddd;
+			min-height: 200px;
+		}
+
+		.container::after {
+			content: '';
+			display: inline-block;
+			width: 100%;
+		}
+
+		/*mobile first design pattern. default styles apply to mobile phones and we use media queries to target larger screens*/
+
+		.container .mix,
+		.continer .gap {
+			display: inline-block;
+			width: 100%;
+		}
+
+		.container .mix {
+			text-align: left;
+			background-color: #aaa;
+			margin-bottom: 2%;
+			border-radius: 8px;
+			/*display: none;*/
+			height: 200px;
+		}
+
+		.container .mix::after {
+			content: attr(class);
+			color: white;
+			font-size: 16px;
+			display: inline-block;
+			vertical-align: top;
+			padding: 4% 6%;
+			font-weight: 300;
+		}
+
+		/*this is optional we are adding some extra padding so that our boxes are a fixed height larger than our content, we could also use min height here*/
+		.container.mix::before {
+			content: '';
+			display: inline-block;
+			padding-top: 60%;
+		}
+
+		/* larger phones and tablet size*/
+		@media all and (min-width:768px) {
+			.container .mix,
+			.container .gap {
+				width: 48%;
+			}
+		}
+
+		/* desktop and larger screens*/
+		@media all and (min-width:1024px) {
+			.container .mix,
+			.container .gap {
+				width: 24%;
+			}
+		}
+
+		/*Control Styles*/
+		.controls {
+			background-color: #111;
+			padding: 1%;
+			color:  white;
+		}
+
+		label {
+			font-weight: 400;
+			margin:0 20px 0 0;
+		}
+
+		button {
+			display: inline-block;
+			padding: 5px 10px;
+			background-color: #777;
+			border: 0;
+			color: #eee;
+			font-size: 16px;
+			font-weight: 100;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		button.active {
+			background-color: #999;
+		}
+
+		button:focus {
+			outline: 0 none;
+		}
+
+		button + label {
+			margin-left: 1rem;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+<!-- our sorting controls and filter -->
+
+<div class="controls">
+	<label>Filter:</label>
+	<button class="filter">Dog</button>
+	<button class="filter">Cat</button>
+	<button class="filter">Goat</button>
+	<label>Sort:</label>
+</div>
+
+
+
+
+<!-- container and ID to sort -->
+<div class="container" id="Container">
+	<!-- sort me! -->
+	<!-- class mix is used by mixitup to know what to sort/mix -->
+	<!-- other classes are used for sorting -->
+	<div class="mix dog"></div>
+	<div class="mix cat"></div>
+	<div class="mix dog cat"></div>
+	<div class="mix goat"></div>
+	<div class="mix goat cat"></div>
+	<div class="mix goat dog"></div>
+
+</div>
+
+
+
+<!-- Load JQ first -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+<!-- Then mixitup JQ lib -->
+<script src="jquery.mixitup.min.js" />
+<!-- Custom Scripts -->
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
