@@ -8,6 +8,26 @@ jQuery Mobile, much like Bootstrap Documentation offers us a ton of code snippet
 
 [jQuery Mobile Demos](http://demos.jquerymobile.com/1.4.5/)
 
+## Python Simple Server
+
+As you begin using more and more external frameworks, you will find your pages, api requests, etc may be denied by the browser when just openening locally from sublime. This is because many frameworks/scripts require them to be served from a browser. With jQuery Mobile, we will nto be able to link between pages in our site when opening a file directly from our computer.
+
+Lucky for us, Python has a cute little module for spinning up a local server!
+
+In terminal:
+```bash
+cd /your-website-directory
+```
+If you have Python 2 installed on your computer:
+```bash
+python -m SimpleHTTPServer
+```
+If you have Python 3 installed on your computer:
+```bash
+python3 -m http.server
+```
+BOOM! go to `http://localhost:8000/` on your computer and your index page will be served up. Now your individual files/pages should link without absolute urls.
+
 ## Getting Started:
 
 The base structure for our first jQuery Mobile page will look pretty familiar. We need to link to:
@@ -19,7 +39,7 @@ The base structure for our first jQuery Mobile page will look pretty familiar. W
 * the latest stable jQuery Mobile JavaScript
 
 ```html
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 <head>
  <title>Page Title</title>
@@ -83,9 +103,9 @@ Take a moment to look at the various default themes we can apply to various area
 <div data-role="header" data-theme="b">
 ```
 
-We can write our own theme CSS, find a theme on the internet, or use [jQuery’s Theme Roller](https://themeroller.jquerymobile.com/) to at the very least, get our color schemes and some basic CSS styles generated for us. 
+We can write our own theme CSS, find a theme on the internet, or use [jQuery’s Theme Roller](https://themeroller.jquerymobile.com/) to at the very least, get our color schemes and some basic CSS styles generated for us.
 
-Some good custom starter themes are [Flat UI](http://ququplay.github.io/jquery-mobile-flat-ui-theme/) and [Square UI](https://github.com/ququplay/jquery-mobile-square-ui-theme). 
+Some good custom starter themes are [Flat UI](http://ququplay.github.io/jquery-mobile-flat-ui-theme/) and [Square UI](https://github.com/ququplay/jquery-mobile-square-ui-theme).
 
 You could just as easily make these themes with Theme Roller, it just takes time and patience. Whatever theme you start with, you will most likely wind up writing more custom CSS as you build out your app.
 
@@ -178,10 +198,10 @@ Now we can open our popup. Take a look at the different transitions we can use h
 There are many ways to lay out content with JQM. We are going to quickly look at one of their default grids. It is worth mentioning that there is a 960 grid system we can use with JQM called Fluid 960. Today we will use jQuery’s 3 col grid to event space 3 buttons in the footer of our popup. You can learn about the different grids here:
 
 ```html
-<div class="ui-grid-b center"> 
-  <div class="ui-block-a"><a data-role="button" data-icon="check" data-iconpos="left" data-theme="b">Yes</a></div> 
-  <div class="ui-block-b"><a data-role="button" data-icon="delete" data-iconpos="left" data-theme="b" data-corners="false">No</a></div> 
-  <div class="ui-block-c"><a class="ui-shadow ui-btn ui-btn-b ui-corner-all ui-icon-back ui-btn-icon-notext ui-btn-inline">Maybe</a></div> 
+<div class="ui-grid-b center">
+  <div class="ui-block-a"><a data-role="button" data-icon="check" data-iconpos="left" data-theme="b">Yes</a></div>
+  <div class="ui-block-b"><a data-role="button" data-icon="delete" data-iconpos="left" data-theme="b" data-corners="false">No</a></div>
+  <div class="ui-block-c"><a class="ui-shadow ui-btn ui-btn-b ui-corner-all ui-icon-back ui-btn-icon-notext ui-btn-inline">Maybe</a></div>
 </div>
 ```
 
