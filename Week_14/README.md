@@ -7,8 +7,8 @@
 In order for your project to be considered complete for grading you will be **required to submit the following by 8pm Monday Dec 18**
 
 1. In Class Presentation
-2. Blog or README.md documentation (email me link before Tuesday 8pm)
-3. Live Hosted Site (email me link before Tuesday 8pm)
+2. Blog or README.md documentation (email me link before MONDAY 8pm)
+3. Live Hosted Site (email me link before MONDAY 8pm)
 4. Source code in a folder labeled FINAL in your GitHub repository
 
 ## Presentations
