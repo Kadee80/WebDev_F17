@@ -30,24 +30,25 @@ You can add links with markdown as follows:
 # Presentation Order
 
 ## Tuesday
-- Daniel
+- Abhiroop
 - AJ
 - Kevin
-- Raj
 - Miranda
-- Jimmy L
-- Rachel
+- Jimmy C
+- Homer
+- Raj
+- Jessica
 - Jeremy
-- Wentao
-- Tiffany
+- Richelle
 
 ## Wednesday
-- Homer
-- Jimmy C
+- Daniel
+- Jimmy L
 - Bertin
-- Richelle
+- Tiffany
 - Jillian
 - John
-- Abhiroop
+- Rachel
 - Ahmed
-- Jessica
+- Wentao
+
